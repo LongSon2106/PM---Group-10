@@ -42,7 +42,7 @@
             <ul class="clear">
                 <li><a href="/index.jsp">Home</a></li>
 
-                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Manufacturer</a>
+                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Products</a>
                     <ul>
                         <%
                             CategoryDao categoryDao = new CategoryDao();
@@ -160,7 +160,7 @@
                         <table style="width:100%" border="1">
 
                             <tr>
-                                <td style="width: 30%" ><b>Manufacturer</b></td>
+                                <td style="width: 30%" ><b>Products</b></td>
                                 <td style="width: 70%"><%=product.get_comment()%></td>
 
                             </tr>
@@ -170,7 +170,7 @@
 
                             </tr>
                             <tr>
-                                <td style="width: 30%" ><b>Size and Weight</b></td>
+                                <td style="width: 30%" ><b>Storage</b></td>
                                 <td style="width: 70%"><%=product.get_comment3()%></td>
 
                             </tr>
@@ -281,8 +281,8 @@
                 </c:forEach>
 
             </ul>
-            <div  style="alignment: right">
-                <h1 style="float: left">Recommend</h1>
+            <div>
+                <h1 style="float: left">Other Products</h1>
 
                 <%
                     ProductDao productDao1 = new ProductDao();
@@ -365,7 +365,7 @@
 
 
 
-            <div  style="alignment: right">
+            <div  style="alignment: left">
                 <h1 style="float: left">Write A Comment</h1>
             </div>
 
@@ -470,8 +470,8 @@
                     Tp.HCM<br>
                 </address>
                 <ul class="nospace">
-                    <li class="btmspace-10"><span class="fa fa-phone"></span> +84 (090) 919 9xx</li>
-                    <li><span class="fa fa-envelope-o"></span> 1359009@itec.hcmus.edu.vn</li>
+                    <li class="btmspace-10"><span class="fa fa-phone"></span> +84 (093) 233 2xx</li>
+                    <li><span class="fa fa-envelope-o"></span> 1359037@itec.hcmus.edu.vn</li>
                 </ul>
             </div>
             <div class="one_quarter">
@@ -518,7 +518,7 @@
 <div class="wrapper row6">
     <div id="copyright" class="clear">
         <!-- ################################################################################################ -->
-        <p class="fl_left">Designed By:   <a href="https://www.facebook.com/nguyen.hoa.9619/about">Nguyễn Vũ Hòa</a>   ---   <a href="https://www.facebook.com/minhquanle95">Lê Minh Quân</a>   ---   <a href="https://www.facebook.com/son.long.5">Trần Long Sơn</a>   ---   <a href="https://www.facebook.com/khaitran296">Trần Quang Khải</a>   ---   13BIT1</a>
+        <p class="fl_left">Designed By:   <a href="#">Trần Long Sơn</a>   ---   <a href="#5">Nguyễn Nguyên Thiên</a>   ---   <a href="#">Trần Đoàn Hải Phong</a>   ---   13BIT1</a>
         </p>
 
         <!-- ################################################################################################ -->

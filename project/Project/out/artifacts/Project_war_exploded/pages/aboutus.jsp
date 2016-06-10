@@ -21,7 +21,7 @@
     <header id="header" class="clear">
         <!-- ################################################################################################ -->
         <div id="logo" class="fl_left">
-            <h1><a href="/index.jsp">Funny Store</a></h1>
+            <h1><a href="/index.jsp">Solo Store</a></h1>
 
 
         </div>
@@ -29,7 +29,7 @@
         <nav id="mainav" class="fl_right">
             <ul class="clear">
                 <li class="active"><a href="/index.jsp">Home</a></li>
-                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Manufacturer</a>
+                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Products</a>
                     <ul>
                         <%
                             CategoryDao categoryDao = new CategoryDao();
@@ -186,8 +186,8 @@
                     Tp.HCM<br>
                 </address>
                 <ul class="nospace">
-                    <li class="btmspace-10"><span class="fa fa-phone"></span> +84 (090) 919 9xx</li>
-                    <li><span class="fa fa-envelope-o"></span> 1359009@itec.hcmus.edu.vn</li>
+                    <li class="btmspace-10"><span class="fa fa-phone"></span> +84 (093) 233 2xx</li>
+                    <li><span class="fa fa-envelope-o"></span> 1359037@itec.hcmus.edu.vn</li>
                 </ul>
             </div>
             <div class="one_quarter">
@@ -195,7 +195,7 @@
                 <ul class="nospace linklist">
                     <li><a href="/index.jsp">Home Page</a></li>
 
-                    <li><a href="gallery.jsp?page=1&action=getall">Manufacturer</a></li>
+                    <li><a href="gallery.jsp?page=1&action=getall">Products</a></li>
 
                     <li><a href="aboutus.jsp">Contact Us</a></li>
                 </ul>

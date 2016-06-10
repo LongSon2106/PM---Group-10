@@ -47,7 +47,7 @@
             <ul class="clear">
                 <li class="active"><a href="/index.jsp">Home</a></li>
 
-                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Manufacturer</a>
+                <li><a class="drop" href="gallery.jsp?page=1&action=getall">Products</a>
                     <ul>
                         <%
                             CategoryDao categoryDao = new CategoryDao();
