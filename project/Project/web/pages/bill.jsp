@@ -7,6 +7,8 @@
 <%@ page import="java.util.List" %>
 <%@ page import="Bill.com.DetailBillDao" %>
 <%@ page import="Bill.com.DetailBill" %>
+<%@ page import="java.io.OutputStream" %>
+<%@ page import="java.sql.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -231,7 +233,19 @@
                                            onclick="return confirm('Are you sure?')">
                                 </c:if>
                             </div>
+
+                            <div class="one_third">
+                                <label for="picture">Picture</label>
+                                <img id="picture" src="/images/demo/bill/<%=detailBills.get(0).getIdbill()%>.png">
+                            </div>
                         </form>
+                        <form method="post" action="/UploadServlet?idBill=<%=detailBills.get(0).getIdbill()%>&stt=<%=detailBills.get(0).getStt()%>" enctype="multipart/form-data">
+                        <div class="one_third first">
+                            <label for="quantity">Upload</label>
+                            <input type="file" name="photo" value="select images..." size="22" readonly>
+                            <input name='upload' type='submit' value='Upload'>
+                        </div>
+                            </form>
                     </div>
                 </ul>
                 <p><a class="btn" href="bill.jsp" onclick="window.location.href='/bill.jsp'">Back</a></p>

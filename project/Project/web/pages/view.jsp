@@ -131,7 +131,7 @@
                         if (name.equals("admin")) {
                     %>
                     <p><a class="btn" href="user.jsp">Manage Members</a> <a class="btn" href="bill.jsp">Manage Bills</a>
-                     <a class="btn" href="updata.jsp">Add database</a> <a class="btn" href="downdata.jsp">Delete database</a></p>
+                    <a class="btn" href="updata.jsp">Add database</a> <a class="btn" href="downdata.jsp">Delete database</a> <a class="btn" href="statistic.jsp">Statistic</a></p>
 
                     <%
                     } else {

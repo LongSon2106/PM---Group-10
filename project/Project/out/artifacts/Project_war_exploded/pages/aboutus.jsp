@@ -75,7 +75,7 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row0 bgded" style="background-image:url('/images/demo/backgrounds/1.png')">
+<div class="wrapper row0 bgded" style="background-image:url('/images/demo/backgrounds/7.jpg')">
     <div class="shout">
         <!-- ################################################################################################ -->
 
@@ -148,9 +148,9 @@
                                                       src="/images/demo/testimonial/3.jpg" alt=""></div>
                     <div class="two_third">
                         <h3 class="nospace"><a href="#">Others</a></h3>
-                        <em><a href="https://www.facebook.com/lam.triet.7/media_set?set=a.898639813497040.1073741828.100000530904147&type=3">Lâm Minh Triết - 13BIT</em>
+                        <em><a href="#"></em>
 
-                        <p>ID: 1359035</p>
+                        <p>ID: </p>
 
                         <p class="nospace"><span class="fa fa-phone"></span> 206-709-3100</p>
                     </div>

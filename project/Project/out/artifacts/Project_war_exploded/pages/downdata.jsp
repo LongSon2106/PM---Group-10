@@ -166,8 +166,7 @@
             <div id="comments">
               <form action="/DeleteServlet" method="post">
                 <div class="one_third first">
-                  <input type="text" name="catname" id="catname" value="${i.catName}" size="22"
-                         readonly="readonly">
+                  <input type="text" name="catname" id="catname" value="${i.catName}" size="22">
                 </div>
                 <div class="one_third">
 
@@ -199,8 +198,7 @@
               <form action="/DeleteServlet" method="post">
                 <div class="one_third first">
                   <input type="text" name="name" id="name" value="${i.name}" size="22"
-                         onClick="window.location.href='downdata.jsp?stt=${i.stt}'"
-                         readonly="readonly">
+                         onClick="window.location.href='downdata.jsp?stt=${i.stt}'" readonly>
                   <input type="hidden" name="stt" id="stt" value="${i.stt}" size="22">
                 </div>
                 <div class="one_third">
@@ -233,54 +231,56 @@
               <div class="one_third first">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" value="<%=detailproduct.getName()%>"
-                       size="22" readonly>
+                       size="22">
                 <input type="hidden" name="stt" id="stt" value="<%=detailproduct.getStt()%>" size="22">
               </div>
               <div class="one_third">
                 <label for="sku">SKU</label>
                 <input type="text" name="sku" id="sku"
-                       value="<%=detailproduct.getID()%>" size="22" readonly>
+                       value="<%=detailproduct.getID()%>" size="22">
               </div>
               <div class="one_third">
                 <label for="price">Price</label>
                 <input type="text" name="price" id="price" value="<%=detailproduct.getPrice()%>"
-                       size="22" readonly>
+                       size="22">
               </div>
               <div class="one_third first">
                 <label for="stt">STT</label>
                 <input type="text" name="stt" id="stt"
-                       value="<%=detailproduct.getStt()%>" size="22" readonly>
+                       value="<%=detailproduct.getStt()%>" size="22">
               </div>
               <div class="one_third">
                 <label for="quantity">Quantity</label>
                 <input type="number" name="quantity" id="quantity" value="<%=detailproduct.getQuantity()%>"
-                       size="22" readonly>
+                       size="22">
               </div>
               <div class="one_third">
                 <label for="date">Date</label>
                 <input type="date" name="date" id="date" value="<%=detailproduct.getDate()%>"
-                       size="22" readonly>
+                       size="22">
               </div>
               <div class="one_third first">
                 <label for="view">View</label>
                 <input type="text" name="view" id="view" value="<%=detailproduct.getView()%>"
-                       size="22" readonly>
+                       size="22">
               </div>
               <div class="one_third">
                 <label for="url">URL</label>
                 <input type="text" name="url" id="url"
-                       value="<%=detailproduct.get_url()%>" size="22" readonly>
+                       value="<%=detailproduct.get_url()%>" size="22">
               </div>
               <div class="one_third first">
                 <c:if test="<%=detailproduct.get_status().equals(0)%>">
                   <input name='activeproin' type='submit' value='Active' STYLE="color: red">
                   <input name='deleteproin' type='submit' value='Delete'
                          onclick="return confirm('Are u sure?')">
+                  <center><input name='update' type='submit' value='Update'></center>
                 </c:if>
                 <c:if test="<%=detailproduct.get_status().equals(1)%>">
                   <input name='inactiveproin' type='submit' value='Inactive'>
                   <input name='deleteproin' type='submit' value='Delete'
                          onclick="return confirm('Are u sure?')">
+                  <center><input name='update' type='submit' value='Update'></center>
                 </c:if>
               </div>
             </form>
